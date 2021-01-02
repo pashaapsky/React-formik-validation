@@ -1,0 +1,104 @@
+@import "~@fortawesome/fontawesome-free/css/all.min.css";
+
+* {
+    box-sizing: border-box;
+}
+
+.App {
+    font-family: Tahoma sans-serif;
+    background-color: #9b59b6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 100vh;
+    margin: 0;
+}
+
+.fixed-container {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.3);
+    width: 400px;
+    max-width: 100%;
+
+    overflow: hidden;
+}
+
+.header {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #f0f0f0;
+
+    padding: 20px 40px;
+}
+
+.header h2 {
+    margin: 0;
+}
+
+.form {
+    padding: 30px 40px;
+}
+
+.form-control {
+    position: relative;
+
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.form-control.success input {
+    border: 1px solid green;
+}
+
+.form-control.error input {
+    border: 1px solid red;
+}
+
+.form-control i {
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+
+.form-control i.fa-check-circle.green {
+    color: green;
+}
+
+.form-control i.fa-exclamation-circle.red {
+    color: red;
+}
+
+
+.form button {
+    background-color: #8e44ad;
+    border: 2px solid #8e44ad;
+    color: #fff;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-family: inherit;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.form .error-msg {
+    color: red;
+}
